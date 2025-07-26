@@ -19,7 +19,7 @@ module FSM(
     reg deviate, senseOneTime;
     reg start_timer_flag;
 
-    // latch flag into start_timer
+ 
     always @(posedge clk) begin
         start_timer <= start_timer_flag;
         start_timer_flag <= 0;
